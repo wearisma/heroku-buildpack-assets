@@ -1,0 +1,5 @@
+#!/bin/sh
+make -C $BUILD_DIR sass-compile
+npm install -g babel-preset-es2015
+NODE_OPTIONS=--max_old_space_size=512 make -C $BUILD_DIR js-compile
+NODE_OPTIONS=--max_old_space_size=512 make -C $BUILD_DIR vue-compile
