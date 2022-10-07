@@ -18,3 +18,4 @@ cd $1
 npm install -g babel-preset-es2015
 NODE_OPTIONS=--max_old_space_size=512 make js-compile
 NODE_OPTIONS=--max_old_space_size=512 make vue-compile
+NODE_OPTIONS=--max_old_space_size=512 make sass-compile
