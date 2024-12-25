@@ -16,6 +16,6 @@ export_env_dir() {
 export_env_dir $3
 cd $1
 npm install -g babel-preset-es2015
-NODE_OPTIONS=--max_old_space_size=512 make js-compile
-NODE_OPTIONS=--max_old_space_size=512 make vue-compile
-NODE_OPTIONS=--max_old_space_size=512 make sass-compile
+NODE_OPTIONS=--max_old_space_size=8192 make js-compile
+NODE_OPTIONS=--max_old_space_size=8192 make vue-compile
+NODE_OPTIONS=--max_old_space_size=8192 make sass-compile
